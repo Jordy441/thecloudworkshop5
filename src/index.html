@@ -1,106 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LionShield | Learn, Build, Connect</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080f1d">
+  <meta name="description" content="LionShield — learn new skills, build meaningful projects and connect with a community that helps you grow.">
+  <title>LionShield | Learn. Build. Connect.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="navbar">
-        <a href="#" class="logo">🛡️ LionShield</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="LionShield home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 44" role="img"><path d="M20 2 36 8v12c0 10.2-6.6 17.5-16 22C10.6 37.5 4 30.2 4 20V8L20 2Z" /><path class="shield-cut" d="m12 21 5.2 5.2L28.5 15" /></svg>
+        </span>
+        <span class="brand-name">Lion<span>Shield</span></span>
+      </a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#learn">Learn</a>
-            <a href="#build">Build</a>
-            <a href="#connect">Connect</a>
-        </nav>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-        <a href="#get-started" class="nav-button">Get Started</a>
-    </header>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#learn">Learn</a>
+        <a class="nav-link" href="#build">Build</a>
+        <a class="nav-link" href="#connect">Connect</a>
+        <a class="nav-cta" href="#get-started">Get started <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <span class="tag">LEARN. BUILD. CONNECT.</span>
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> LEARN. BUILD. CONNECT.</div>
+        <h1>Empowering people to <span class="gradient-text">learn, build and connect.</span></h1>
+        <p class="hero-description">Discover opportunities, develop new skills, create meaningful projects and connect with a community that helps you grow.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#get-started">Get started <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#pillars">Explore more <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <span class="proof-icon" aria-hidden="true">✦</span>
+          <span>A place to turn potential into progress.</span>
+        </div>
+      </div>
 
-                <h1>Empowering people to
-                    <span>learn, build and connect.</span>
-                </h1>
+      <div class="hero-art reveal" aria-label="LionShield emblem illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit-dot dot-one"></div>
+        <div class="orbit-dot dot-two"></div>
+        <div class="shield-card">
+          <div class="shield-glow"></div>
+          <svg class="hero-shield" viewBox="0 0 180 198" aria-hidden="true">
+            <defs>
+              <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#64d8ff"/>
+                <stop offset="1" stop-color="#167bd5"/>
+              </linearGradient>
+            </defs>
+            <path d="M90 7 161 33v54c0 48-29 82-71 104C48 169 19 135 19 87V33L90 7Z" fill="url(#shieldGradient)" opacity=".16" stroke="#63d6ff" stroke-width="3"/>
+            <path d="M90 22 147 43v44c0 39-22 67-57 87-35-20-57-48-57-87V43l57-21Z" fill="none" stroke="#8be4ff" stroke-width="2" opacity=".8"/>
+            <path d="m54 98 23 23 50-54" fill="none" stroke="#a5edff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="shield-caption">STRONGER TOGETHER</span>
+        </div>
+        <div class="float-chip chip-top"><span class="chip-symbol">✦</span> Keep growing</div>
+        <div class="float-chip chip-bottom"><span class="status-pulse"></span> Ideas into action</div>
+      </div>
+      <a class="scroll-cue" href="#pillars" aria-label="Scroll to explore"><span></span> SCROLL TO EXPLORE</a>
+    </section>
 
-                <p>
-                    Discover opportunities, develop new skills,
-                    create meaningful projects and connect
-                    with a community that helps you grow.
-                </p>
+    <section class="pillars section-wrap" id="pillars">
+      <div class="section-heading reveal">
+        <div class="eyebrow">THE LIONSHIELD APPROACH</div>
+        <h2>Everything you need <span class="gradient-text">to grow.</span></h2>
+        <p>Three simple ways to unlock your potential and make meaningful progress.</p>
+      </div>
 
-                <div class="hero-buttons">
-                    <a href="#get-started" class="primary-button">
-                        Get Started →
-                    </a>
-                    <a href="#learn" class="secondary-button">
-                        Explore More
-                    </a>
-                </div>
-            </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal" id="learn">
+          <div class="card-topline"><span class="card-number">01</span><span class="card-icon icon-learn" aria-hidden="true">✧</span></div>
+          <div class="card-illustration learn-art" aria-hidden="true">
+            <span class="book book-back"></span><span class="book book-front"></span><span class="spark spark-a">✦</span><span class="spark spark-b">·</span>
+          </div>
+          <h3>Learn</h3>
+          <p>Develop knowledge, discover new skills and explore opportunities that help you move forward.</p>
+          <a class="text-link" href="#get-started">Explore learning <span>→</span></a>
+        </article>
 
-            <div class="hero-visual">
-                <div class="shield">🛡️</div>
-                <h2>Stronger Together</h2>
-                <p>Learn something new. Build something great.</p>
-            </div>
-        </section>
+        <article class="feature-card reveal" id="build">
+          <div class="card-topline"><span class="card-number">02</span><span class="card-icon icon-build" aria-hidden="true">⌘</span></div>
+          <div class="card-illustration build-art" aria-hidden="true">
+            <span class="build-orbit"></span><span class="build-core">＋</span><span class="build-node node-a"></span><span class="build-node node-b"></span><span class="build-node node-c"></span>
+          </div>
+          <h3>Build</h3>
+          <p>Turn ideas into reality through projects, creativity and the confidence to try something new.</p>
+          <a class="text-link" href="#get-started">Start building <span>→</span></a>
+        </article>
 
-        <section class="features" id="learn">
-            <div class="section-heading">
-                <span class="tag">WHAT WE OFFER</span>
-                <h2>Everything you need to grow</h2>
-                <p>Three simple ways to unlock your potential.</p>
-            </div>
+        <article class="feature-card reveal" id="connect">
+          <div class="card-topline"><span class="card-number">03</span><span class="card-icon icon-connect" aria-hidden="true">◎</span></div>
+          <div class="card-illustration connect-art" aria-hidden="true">
+            <span class="person person-one"></span><span class="person person-two"></span><span class="person person-three"></span><span class="connect-line"></span>
+          </div>
+          <h3>Connect</h3>
+          <p>Meet like-minded people, exchange ideas and create connections that make a difference.</p>
+          <a class="text-link" href="#get-started">Join the community <span>→</span></a>
+        </article>
+      </div>
+    </section>
 
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3>Learn</h3>
-                    <p>Develop knowledge, discover new skills
-                    and access learning opportunities.</p>
-                    <a href="#">Explore Learning →</a>
-                </article>
+    <section class="statement-section">
+      <div class="statement-inner reveal">
+        <span class="statement-mark" aria-hidden="true">“</span>
+        <p>Big things happen when <span class="gradient-text">curiosity meets community.</span></p>
+        <span class="statement-rule"></span>
+        <span class="statement-caption">THE LIONSHIELD MINDSET</span>
+      </div>
+    </section>
 
-                <article class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Build</h3>
-                    <p>Turn your ideas into reality through
-                    projects, creativity and collaboration.</p>
-                    <a href="#">Start Building →</a>
-                </article>
+    <section class="cta-section section-wrap" id="get-started">
+      <div class="cta-panel reveal">
+        <div class="cta-orb orb-a"></div><div class="cta-orb orb-b"></div>
+        <div class="cta-content">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER</div>
+          <h2>Your journey <span class="gradient-text">starts here.</span></h2>
+          <p>Learn something new. Build something meaningful. Connect with people who inspire you.</p>
+          <a class="button button-primary" href="mailto:hello@lionshield.example?subject=Getting%20started%20with%20LionShield">Get in touch <span aria-hidden="true">↗</span></a>
+          <span class="cta-note">One step can open up a world of possibilities.</span>
+        </div>
+        <div class="cta-emblem" aria-hidden="true">
+          <svg viewBox="0 0 180 198"><path d="M90 7 161 33v54c0 48-29 82-71 104C48 169 19 135 19 87V33L90 7Z"/><path d="m54 98 23 23 50-54"/></svg>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                <article class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Connect</h3>
-                    <p>Meet like-minded people, share ideas
-                    and create valuable connections.</p>
-                    <a href="#">Join the Community →</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="cta" id="get-started">
-            <h2>Your journey starts here.</h2>
-            <p>Learn more. Build better. Connect stronger.</p>
-            <a href="#home" class="primary-button">Join LionShield →</a>
-        </section>
-    </main>
-
-    <footer>
-        <a href="#" class="logo">🛡️ LionShield</a>
-        <p>© 2026 LionShield. All rights reserved.</p>
-        <p>Learn. Build. Connect.</p>
-    </footer>
-
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44"><path d="M20 2 36 8v12c0 10.2-6.6 17.5-16 22C10.6 37.5 4 30.2 4 20V8L20 2Z"/><path class="shield-cut" d="m12 21 5.2 5.2L28.5 15"/></svg></span>
+        <span class="brand-name">Lion<span>Shield</span></span>
+      </a>
+      <p>Learn. Build. Connect.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> LionShield. All rights reserved.</span><span>Built for curious minds and bold ideas.</span></div>
+  </footer>
 </body>
 </html>
